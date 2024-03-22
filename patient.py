@@ -51,8 +51,14 @@ class Patient:
     def set_address(self, address):
         self.__address = address
 
-    def __str__(self):
-        return f"Patient[patient_id={self.__patient_id}, first_name={self.__first_name}, last_name={self.__last_name}, date_of_birth={self.__date_of_birth}, gender={self.__gender}, contact_number={self.__contact_number}, address={self.__address}]"
+    def print_details(self):
+        print(f"Patient ID: {self.__patient_id}")
+        print(f"First Name: {self.__first_name}")
+        print(f"Last Name: {self.__last_name}")
+        print(f"Date of Birth: {self.__date_of_birth}")
+        print(f"Gender: {self.__gender}")
+        print(f"Contact Number: {self.__contact_number}")
+        print(f"Address: {self.__address}")
 
 
 
